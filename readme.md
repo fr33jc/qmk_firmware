@@ -11,6 +11,7 @@ This is a keyboard firmware based on the [tmk\_keyboard firmware](https://github
 
 ## Documentation
 
+* For Debian, remove `modemmanager` as it probably hijacks the port when you're resetting it:  `sudo apt-get remove --purge modemmanager`.  Then use `avrdude` to flash it:  `make keebio/iris:fr33jc:avrdude`
 * [See the official documentation on docs.qmk.fm](https://docs.qmk.fm)
 
 The docs are powered by [Docsify](https://docsify.js.org/) and hosted on [GitHub](/docs/). They are also viewable offline; see [Previewing the Documentation](https://docs.qmk.fm/#/contributing?id=previewing-the-documentation) for more details.
